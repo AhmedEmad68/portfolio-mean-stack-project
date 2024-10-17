@@ -1,0 +1,72 @@
+<div class="container mt-5">
+    <h2 class="text-center mb-5"><span class="skill-card">Admin Dashboard</span></h2>
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <div class="card shadow-sm">
+                <div class="card-header d-flex align-items-center bg-info text-white">
+                    <h4 class="mb-0">Project List</h4>
+                    
+                    
+                </div>
+                <div class="card-body p-2">
+                    <table class="table table-hover table-striped mb-0">
+                        <thead class="table-gray">
+                            <tr>
+                                <th scope="col">Title</th>
+                                <th scope="col">Description</th>
+                                <th scope="col" class="text-center">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let project of projects" class="align-middle">
+                                <td>{{ project.title }}</td>
+                                <td>{{ project.description }}</td>
+                                <td class="text-center">
+                                    <button class="btn btn-outline-success btn-sm m-2" (click)="editProject(project)">
+                                        <i class="fas fa-edit"></i> 
+                                    </button>
+                                    <button class="btn btn-outline-danger btn-sm" (click)="deleteProject(project._id)">
+                                        <i class="fas fa-trash"></i> 
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Project Form (for Add and Edit) -->
+            <div class="card mt-4 mb-4 shadow-sm">
+                <div class="card-header d-flex justify-content-between align-items-center bg-info text-white">
+                    <h4 class="mb-0">{{ isEdit ? 'Edit' : 'Add' }} Project</h4>
+                </div>
+                <div class="card-body">
+                    <form (ngSubmit)="saveProject()">
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control" [(ngModel)]="currentProject.title" name="title" required placeholder="Project Title"/>
+                        </div>
+                        <div class="form-group mb-3">
+                            <textarea class="form-control" [(ngModel)]="currentProject.description" name="description" rows="3" required placeholder="Description"></textarea>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="url" class="form-control" [(ngModel)]="currentProject.link" name="link" required placeholder="Project Link"/>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="url" class="form-control" [(ngModel)]="currentProject.imageUrl" name="imageUrl" required placeholder="Image URL"/>
+                        </div>
+                        <button type="submit" class="btn btn-outline-info mt-3 w-100">
+                            {{ isEdit ? 'Update' : 'Add' }} Project
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <ul class="navbar-nav mt-4 mb-4 w-100">
+                <li class="nav-item">
+                    <button (click)="logout()" class="btn btn-danger btn-sm text-white  w-100">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

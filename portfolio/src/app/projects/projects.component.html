@@ -1,0 +1,17 @@
+<section id="projects" class="bg-light py-5 slide-in-up">
+  <div class="container">
+    <h2 class="text-center mb-5"><span class=" skill-card">Projects</span></h2>
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let project of projects">
+        <div class="card skill-card">
+          <img [src]="project.imageUrl" class="card-img-top" [alt]="project.title">
+          <div class="card-body">
+            <h5 class="card-title">{{ project.title }}</h5>
+            <p class="card-text">{{ project.description }}</p>
+            <a [href]="project.link" class="btn btn-outline-info" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

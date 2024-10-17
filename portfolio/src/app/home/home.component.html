@@ -1,0 +1,161 @@
+
+<header class="hero-section text-center py-5 fade-in" [@fadeIn]>
+  <div class="container hero-container" *ngIf="showHeader">
+    <div class="hero-content">
+      <div class="hero-flex">
+        <img src="8.jpg" alt="Profile Photo" class="profile-img">
+        <h1 class="hero-title">Ahmed Emad Ahmed</h1>
+      </div>
+      <p class="hero-subtitle">MEAN-Stack Developer | Crafting Beautiful Web Experiences</p>
+      <div class="mt-4">
+        <a routerLink="/projects" class="btn btn-outline-info btn-lg hero-button">View My Work</a>
+        <a href="https://drive.google.com/file/d/1jOpGqyfbmnzdHiumeXXR3EO6xTg6jH4e/view?usp=drive_link" class="btn btn-outline-info btn-lg hero-button" target="_blank">Download CV</a>
+      </div>
+    </div>
+  </div>
+  <!-- الزهور ستكون خلف هذا الجزء -->
+<div class="flower" *ngIf="showFlowers">
+  <pre>
+  <br><br><br><br><br><br><br><br><br><br><br>
+  </pre>
+  <!-- كود الزهور هنا -->
+  <div class="f-wrapper">
+      <div class="flower__line"></div>
+      <div class="f">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__leaf flower__leaf--5"></div>
+          <div class="flower__leaf flower__leaf--6"></div>
+          <div class="flower__leaf flower__leaf--7"></div>
+          <div class="flower__leaf flower__leaf--8 flower__fall-down--yellow"></div>
+      </div>
+  </div>
+  <div class="f-wrapper f-wrapper--2">
+      <div class="flower__line"></div>
+      <div class="f">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__leaf flower__leaf--5"></div>
+          <div class="flower__leaf flower__leaf--6"></div>
+          <div class="flower__leaf flower__leaf--7"></div>
+          <div class="flower__leaf flower__leaf--8 flower__fall-down--pink"></div>
+      </div>
+  </div>
+  <div class="f-wrapper f-wrapper--3">
+      <div class="flower__line"></div>
+      <div class="f">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__leaf flower__leaf--5"></div>
+          <div class="flower__leaf flower__leaf--6"></div>
+          <div class="flower__leaf flower__leaf--7"></div>
+          <div class="flower__leaf flower__leaf--8 flower__fall-down--purple"></div>
+      </div>
+  </div>
+  <div class="flower__glass"></div>
+</div>
+</header>
+
+<section class="contact text-center py-5">
+  <div class="container">
+    <h2 class="skills-title skill-card">Get in Touch</h2>
+    <p>Feel free to reach out if you have any questions or opportunities. I'm always excited to connect with like-minded professionals.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/ahmed-emad-a23061224" target="_blank" class="text-dark me-3">
+        <i class="fab fa-linkedin fa-3x skill-card"></i>
+      </a>
+      <a href="https://github.com/AhmedEmad68" target="_blank" class="text-dark me-3">
+        <i class="fab fa-github fa-3x skill-card"></i>
+      </a>
+      <a href="mailto:ae639659@gmail.com" target="_blank" class="text-dark me-3">
+        <i class="fas fa-envelope fa-3x skill-card"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="achievements text-center py-5">
+  <div class="container">
+    <h2 class="skills-title skill-card">My Achievements</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4 skill-card">
+        <i class="fas fa-project-diagram fa-3x text-primary mb-3"></i>
+        <h3>15</h3>
+        <p>Completed Projects</p>
+      </div>
+      <div class="col-md-4 mb-4 skill-card">
+        <i class="fas fa-user-tie fa-3x text-success mb-3"></i>
+        <h3>3</h3>
+        <p>Years of Experience</p>
+      </div>
+      <div class="col-md-4 mb-4 skill-card">
+        <i class="fas fa-award fa-3x text-warning mb-3"></i>
+        <h3>8</h3>
+        <p>Certifications</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="testimonials py-5">
+  <div class="container">
+    <h2 class="text-center mb-5"><span class="skill-card">What Clients Say</span></h2>
+
+    <!-- Carousel -->
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      
+      <!-- Indicators (Updated and moved below the carousel) -->
+      <ol class="carousel-indicators">
+        <li data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></li>
+      </ol>
+
+      <!-- Carousel Items -->
+      <div class="carousel-inner">
+        <!-- Testimonial 1 -->
+        <div class="carousel-item active">
+          <div class="testimonial-item text-center p-4">
+            <blockquote class="blockquote">
+              <p class="mb-4">"Ahmed's work is exceptional. He delivered a robust web app that exceeded our expectations."</p>
+              <h5>Client Name, Company</h5>
+            </blockquote>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="carousel-item">
+          <div class="testimonial-item text-center p-4">
+            <blockquote class="blockquote">
+              <p class="mb-4">"Amazing experience working with Ahmed. His technical expertise and timely delivery were perfect."</p>
+              <h5>John Doe, XYZ Corp</h5>
+            </blockquote>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="carousel-item">
+          <div class="testimonial-item text-center p-4">
+            <blockquote class="blockquote">
+              <p class="mb-4">"Highly recommended! Ahmed was able to translate our ideas into a functional and beautiful website."</p>
+              <h5>Jane Smith, Acme Inc</h5>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+  </div>
+</section>

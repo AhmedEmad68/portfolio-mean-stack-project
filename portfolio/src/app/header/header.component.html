@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">
+      <img src="22.jpg" alt="Ahmed Emad Logo" width="50" height="50" class="d-inline-block align-middle">  
+    </a>
+    <div class="social-icons text-center">
+      <a href="https://www.linkedin.com/in/ahmed-emad-a23061224" target="_blank" class="text-white me-3">
+        <i class="fab fa-linkedin fa-lg skill-card"></i>
+      </a>
+      <a href="https://github.com/AhmedEmad68" target="_blank" class="text-white me-3">
+        <i class="fab fa-github fa-lg skill-card"></i>
+      </a>
+      <a href="mailto:ae639659@gmail.com" target="_blank" class="text-white">
+        <i class="fas fa-envelope fa-lg skill-card"></i>
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/about">About</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/projects">Projects</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/services">Services</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <button (click)="toggleDarkMode()" class="btn btn-outline-info ms-3">
+            <i id="darkModeIcon" [ngClass]="isDarkMode ? 'fas fa-sun' : 'fas fa-moon'"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,27 @@
+<div class="container mb-5">
+  <h2 class="text-center mt-5"><span class="skill-card">Welcome Sir</span></h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card mt-5">
+          <div class="card-header text-center">
+            <h3>Admin Login</h3>
+          </div>
+          <div class="card-body">
+            <form (ngSubmit)="login()">
+              <div class="form-group">
+                <label for="username">UserName</label>
+                <input type="text" class="form-control" id="username" placeholder="UserName" [(ngModel)]="credentials.username" name="username" required/>
+              </div>
+              <div class="form-group mt-3">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password" [(ngModel)]="credentials.password" name="password" required/>
+              </div>
+              <button type="submit" class="btn btn-outline-success btn-block my-4 w-100">
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

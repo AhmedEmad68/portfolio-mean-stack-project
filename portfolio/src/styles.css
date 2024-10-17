@@ -1,0 +1,127 @@
+/* You can add global styles to this file, and also import other style files */
+body.dark-mode {
+    background-color: #0e0e0e;
+    color: #ffffff;
+  }
+  body{
+    background-color: #ecf3f5;
+  }
+  body.dark-mode .bg-light {
+    background-color: #0e0e0e !important;
+  }
+  
+  body.dark-mode .card {
+    background-color: #05061a;
+    color: #ffffff;
+  }
+  
+  body.dark-mode .navbar {
+    background-color: #05061a !important;
+  }
+  body.dark-mode footer {
+    background-color: #05061a !important;
+  }
+  
+  body.dark-mode .btn-outline-light {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-up {
+  animation: slideInUp 1.5s ease-in-out;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 1s ease-in-out;
+}
+.merriweather-light {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.merriweather-black {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.merriweather-light-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.merriweather-regular-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.merriweather-bold-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.merriweather-black-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+.skill-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--bg-light);
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+}
+.skill-card:hover {
+  transform: scale(1.06);
+  box-shadow: 0px 4px 15px #36B5F5;
+}

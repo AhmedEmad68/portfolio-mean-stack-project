@@ -1,0 +1,107 @@
+:root {
+    --bg-light: #f9f9f9;
+    --bg-dark: #2c2c2c;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+  }
+  
+  body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+  }
+  
+  body.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+  }
+  
+  #skills-section {
+    background-color: rgba(0, 0, 0, 0.05); 
+    padding: 50px 0;
+  }
+  
+  body.dark-mode #skills-section {
+    background-color: rgba(255, 255, 255, 0.1); 
+  }
+  .about-me{
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    color: var(--text-dark);
+  }
+  .skills-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    color: var(--text-dark);
+  }
+  
+  .skills-title::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: var(--text-dark);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  body.dark-mode .skills-title {
+    color: var(--text-light);
+  }
+  
+  body.dark-mode .skills-title::after {
+    background-color: var(--text-light);
+  }
+  
+ /* Ex Timer */
+ .experience-timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.experience-counter {
+  text-align: center;
+  background-color: var(--bg-light);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.counter {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+.years, .months {
+  color: #36B5F5;
+  font-size: 36px;
+  margin: 0 5px;
+}
+
+/*  */
+.dark-mode .experience-timer-container {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.dark-mode .experience-counter {
+  background-color: var(--bg-dark);
+  border: 1px solid #444;
+  color: var(--text-light);
+}
+
+.dark-mode .counter {
+  color: var(--text-light);
+}
+
